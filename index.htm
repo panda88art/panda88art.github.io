@@ -30,23 +30,28 @@
 
         @keyframes move-ball {
             0% {
-                transform: translate(0px, 0px) rotate(90deg);
+                scale: 300%;
+                transform: translate(-20px, 0px) rotate(90deg);
             }
-            
+
             25% {
-                transform: translate(300px,200px);
+                scale: 250%;
+                transform: translate(30px,120px);
             }
 
             50% {
-                transform: translate(500px,0px);
+                scale: 200%;
+                transform: translate(120px,0px);
             }
 
             75% {
-                transform: translate(700px,100px);
+                scale: 250%;
+                transform: translate(200px,100px);
             }
-            
+
             100% {
-                transform: translate(900px,0px);
+                scale: 300%;
+                transform: translate(300px,0px);
             }
         }
     </style>
@@ -54,7 +59,12 @@
 <body>
     <div class="wrap">
         <header>
-            <h1>  <a href="index.htm" title="石家莊">石家莊</a></h1>
+            <h1>
+                <a href="index.htm" title="石家莊">石家莊</a>
+            </h1>
+            <div class="red-ball">
+                <img src="image/stone_m.png" height="20px" alt="stone">
+            </div>
             <nav>
                 <button class="nav-button"><img src="image/menu.jpg" alt=""></button>
                 <ul class="nav-menu hide">
@@ -64,17 +74,23 @@
                     <li><a href="#" title="旅遊中心">旅遊中心</a></li>
                 </ul>
             </nav>
+
         </header>
-        <main>
-            <div class="red-ball">
-                <picture>
-                    <source media="(max-width: 727px)" srcset="image/stone_m.png">
-                    <source media="(min-width: 728px)" srcset="image/stone_m.png">
-                    <img src="image/stone_m.png"  alt="stone">
+        <section>
+
+            <div class="ban">
+                <div class="ban__info">
+
+                </div>
+                <picture class="ban__image">
+
+                    <source media="(max-width: 727px)" srcset="image/main_mobile.jpg">
+                    <source media="(min-width: 728px)" srcset="image/main_desktop.jpg">
+                    <img src="image/main_desktop.jpg" alt="stone">
                 </picture>
             </div>
+        </section>
 
-        </main>
         <section>
             <div class="card">
                 <div class="card__info">
@@ -100,7 +116,7 @@
                 <picture class="card__image">
                     <source media="(max-width: 727px)" srcset="image/s_pebble_p.jpg">
                     <source media="(min-width: 728px)" srcset="image/s_pebble.jpg">
-                    <img src="image/s_pebble.jpg" alt="PEBBLE" >
+                    <img src="image/s_pebble.jpg" alt="PEBBLE">
                 </picture>
 
             </div>
