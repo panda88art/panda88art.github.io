@@ -3,77 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Succulent Gardening</title>
-<link rel="stylesheet" href="style.css">
+    <title>石家莊</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .red-ball {
+            /*CSS 的 Animation 動態語法*/
+            animation-name: move-ball; /*動態的名稱*/
+            animation-duration: 4.5s; /*動態播放的時間長度*/
+            animation-timing-function: ease-in-out; /*播放的節奏*/
+            animation-delay: 0s; /*延遲播放*/
+            animation-iteration-count:  infinite; /*播放次數*/
+            animation-fill-mode: forwards; /*播完之後的狀態*/
+            /*以下為上面動態語法的的縮寫*/
+            /*animation: move-ball 5s ease-in 0s infinite alternate;*/
+        }
+
+        @keyframes move-ball {
+            0% {
+                transform: translate(0px, 0px) rotate(90deg);
+            }
+            
+            25% {
+                transform: translate(300px,200px);
+            }
+
+            50% {
+                transform: translate(500px,0px);
+            }
+
+            75% {
+                transform: translate(700px,100px);
+            }
+            
+            100% {
+                transform: translate(1000px,0px);
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="wrap">
-    <header>
-        <h1>  <a href="index.htm" title="Succulent Gardening Home">Succulent Gardening</a></h1>
-        <nav>
-            <button class="nav-button"><img src="image/img_menu.svg" alt=""></button>
-            <ul class="nav-menu hide">
-                <li><a href="#" title="News">News</a></li>
-                <li><a href="#" title="Plants">Plants</a></li>
-                <li><a href="#" title="Decoration">Decoration</a></li>
-                <li><a href="#" title="About Us">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Succulent Gardening</h1>
-        <p>Best place to become an indoor gardener</p>
-    </main>
-    <section>
-        <div class="card">
-            <picture class="card__image">
-                <source media="(max-width: 727px)" srcset="image/img_card01p.jpg">
-                <source media="(min-width: 728px)" srcset="image/img_card01.jpg">
-                <img src="image/img_card01.jpg" alt="How to choose the right plants">
-            </picture>
-            <div class="card__info">
-                <h3>How to choose the right plants</h3>
-                <p>Your indoor greenery will find you when you are least prepared.</p>
+    <div class="wrap">
+        <header>
+            <h1>  <a href="index.htm" title="石家莊">石家莊</a></h1>
+            <nav>
+                <button class="nav-button"><img src="image/menu.jpg" alt=""></button>
+                <ul class="nav-menu hide">
+                    <li><a href="#" title="歷史介紹">歷史介紹</a></li>
+                    <li><a href="#" title="景點導覽">景點導覽</a></li>
+                    <li><a href="#" title="本地特產">本地特產</a></li>
+                    <li><a href="#" title="旅遊中心">旅遊中心</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="red-ball">
+                <picture>
+                    <source media="(max-width: 727px)" srcset="image/stone_m.png">
+                    <source media="(min-width: 728px)" srcset="image/stone_m.png">
+                    <img src="image/stone_m.png"  alt="stone">
+                </picture>
             </div>
-        </div>
-        <div class="card">
-            <picture class="card__image">
-                <source media="(max-width: 727px)" srcset="image/img_card02p.jpg">
-                <source media="(min-width: 728px)" srcset="image/img_card02.jpg">
-                <img src="image/img_card02.jpg" alt="How to choose the right plants">
-            </picture>
-            <div class="card__info">
-                <h3>When is the best timing</h3>
-                <p>Succulents love light and need about six hours of sun per day.</p>
+
+        </main>
+        <section>
+            <div class="card">
+                <div class="card__info">
+
+                    <p>
+                        Obsidian 是一個沉重穩重的石頭，屏現出堅強和穩定的個性。
+                        他的存在總是給人一種安全感和信心，就像一座堅固的堡壘般穏定可靠。
+                        儘管他可能顯得沈默寡言,Obsidian 是一個值得信賴的朋友和盟友,
+                        他的堅定意志和冷靜判斷為他贏得了眾人的尊重和敬佩。
+                    </p><br>
+                </div>
+                <picture class="card__image">
+                    <source media="(max-width: 727px)" srcset="image/s_obsidian_p.jpg">
+                    <source media="(min-width: 728px)" srcset="image/s_obsidian.jpg">
+                    <img src="image/Obsidian.jpg" alt="Obsidian">
+                </picture>
             </div>
-        </div>
-        <div class="card">
-            <picture class="card__image">
-                <source media="(max-width: 727px)" srcset="image/img_card03p.jpg">
-                <source media="(min-width: 728px)" srcset="image/img_card03.jpg">
-                <img src="image/img_card03.jpg" alt="How to choose the right plants">
-            </picture>
-            <div class="card__info">
-                <h3>A perfect pot for your favorit plant</h3>
-                <p>Pleasures can be found in a humble potted cactus as in a conservatory.</p>
+            <div class="card">
+                <div class="card__info">
+                    <p>PEBBLE 是一顆膽小好奇的鵝卵石,經常以旁觀者的角度觀察 周遭的事物。他喜歡觀察其他石石的行為和互動,但通常不願意 直接參與其中。但她的好奇心卻常常驅使著她去探索世界, 從一個安全的距離觀察,而不是親身體驗。他的靜靜觀察讓她能 夠從不同的角度看待事物。</p>
+                    <br>
+                </div>
+                <picture class="card__image">
+                    <source media="(max-width: 727px)" srcset="image/s_pebble_p.jpg">
+                    <source media="(min-width: 728px)" srcset="image/s_pebble.jpg">
+                    <img src="image/s_pebble.jpg" alt="PEBBLE" >
+                </picture>
+
             </div>
-        </div>
-        <div class="card">
-            <picture class="card__image">
-                <source media="(max-width: 727px)" srcset="image/img_card04p.jpg">
-                <source media="(min-width: 728px)" srcset="image/img_card04.jpg">
-                <img src="image/img_card04.jpg" alt="How to choose the right plants">
-            </picture>
-            <div class="card__info">
-                <h3>Place it on your healing corner</h3>
-                <p>Don't underestimate the power of that succulent in your living room.</p>
+            <div class="card">
+                <div class="card__info">
+                    <p>Volcanic 是一顆脾氣火爆的火山岩,他的外表有粗硬的紋理, 他的個性熱情奔放,常常怒火中燒,像是火山一樣噴發出來,對 於自己的意見和想法固執。但是能在最困難的時候保持冷靜和理 智。分析情勢,找到解決問題的方法,是一個可靠的夥伴。</p>
+                    <br><br>
+
+                </div>
+                <picture class="card__image">
+                    <source media="(max-width: 727px)" srcset="image/s_volcanic_p.jpg">
+                    <source media="(min-width: 728px)" srcset="image/s_volcanic.jpg">
+                    <img src="image/s_volcanic.jpg" alt="Volcanic">
+                </picture>
             </div>
-        </div>
-    </section>
-    <footer>
-        <p><span> Copyright 2023 Succulent Gardening Workshop. </span>All Rights Reserved</p>
-    </footer>
-</div>  
+
+        </section>
+
+        <petstone>
+
+        </petstone>
+    </div>  
 <script>
     let myNav = document.querySelector(".nav-menu"); //在 JS 裡定義下拉選單
     let myButton = document.querySelector(".nav-button");// 在 JS 裡定義漢堡按鈕
