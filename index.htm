@@ -30,28 +30,28 @@
 
         @keyframes move-ball {
             0% {
-                scale: 300%;
-                transform: translate(-20px, 0px) rotate(90deg);
+                scale: 60%;
+                transform: translate(0px, 0px) rotate(45deg);
             }
 
             25% {
-                scale: 250%;
-                transform: translate(30px,120px);
+                scale: 100%;
+                transform: translate(120px,200px);
             }
 
             50% {
-                scale: 200%;
-                transform: translate(120px,0px);
+                scale: 60%;
+                transform: translate(200px,180px) rotate(45deg);
             }
 
             75% {
-                scale: 250%;
-                transform: translate(200px,100px);
+                scale: 100%;
+                transform: translate(450px,200px);
             }
 
             100% {
-                scale: 300%;
-                transform: translate(300px,0px);
+                scale: 60%;
+                transform: translate(800px,180px) rotate(45deg);
             }
         }
     </style>
@@ -62,9 +62,7 @@
             <h1>
                 <a href="index.htm" title="石家莊">石家莊</a>
             </h1>
-            <div class="red-ball">
-                <img src="image/stone_m.png" height="20px" alt="stone">
-            </div>
+
             <nav>
                 <button class="nav-button"><img src="image/menu.jpg" alt=""></button>
                 <ul class="nav-menu hide">
@@ -76,69 +74,76 @@
             </nav>
 
         </header>
-        <section>
 
-            <div class="ban">
-                <div class="ban__info">
+        <main>
+            <div class="red-ball">
+                <img src="image/stone_m.png" alt="stone">
+            </div>
+        </main>
+
+            <section>
+
+                <div class="ban">
+                    <div class="ban__info">
+
+                    </div>
+                    <picture class="ban__image">
+
+                        <source media="(max-width: 727px)" srcset="image/main_mobile.jpg">
+                        <source media="(min-width: 728px)" srcset="image/main_desktop.jpg">
+                        <img src="image/main_desktop.jpg" alt="stone">
+                    </picture>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <div class="card__info">
+
+                        <p>
+                            Obsidian 是一個沉重穩重的石頭，屏現出堅強和穩定的個性。
+                            他的存在總是給人一種安全感和信心，就像一座堅固的堡壘般穏定可靠。
+                            儘管他可能顯得沈默寡言,Obsidian 是一個值得信賴的朋友和盟友,
+                            他的堅定意志和冷靜判斷為他贏得了眾人的尊重和敬佩。
+                        </p><br>
+                    </div>
+                    <picture class="card__image">
+                        <source media="(max-width: 727px)" srcset="image/s_obsidian_p.jpg">
+                        <source media="(min-width: 728px)" srcset="image/s_obsidian.jpg">
+                        <img src="image/Obsidian.jpg" alt="Obsidian">
+                    </picture>
+                </div>
+                <div class="card">
+                    <div class="card__info">
+                        <p>PEBBLE 是一顆膽小好奇的鵝卵石,經常以旁觀者的角度觀察 周遭的事物。他喜歡觀察其他石石的行為和互動,但通常不願意 直接參與其中。但她的好奇心卻常常驅使著她去探索世界, 從一個安全的距離觀察,而不是親身體驗。他的靜靜觀察讓她能 夠從不同的角度看待事物。</p>
+                        <br>
+                    </div>
+                    <picture class="card__image">
+                        <source media="(max-width: 727px)" srcset="image/s_pebble_p.jpg">
+                        <source media="(min-width: 728px)" srcset="image/s_pebble.jpg">
+                        <img src="image/s_pebble.jpg" alt="PEBBLE">
+                    </picture>
 
                 </div>
-                <picture class="ban__image">
+                <div class="card">
+                    <div class="card__info">
+                        <p>Volcanic 是一顆脾氣火爆的火山岩,他的外表有粗硬的紋理, 他的個性熱情奔放,常常怒火中燒,像是火山一樣噴發出來,對 於自己的意見和想法固執。但是能在最困難的時候保持冷靜和理 智。分析情勢,找到解決問題的方法,是一個可靠的夥伴。</p>
+                        <br><br>
 
-                    <source media="(max-width: 727px)" srcset="image/main_mobile.jpg">
-                    <source media="(min-width: 728px)" srcset="image/main_desktop.jpg">
-                    <img src="image/main_desktop.jpg" alt="stone">
-                </picture>
-            </div>
-        </section>
-
-        <section>
-            <div class="card">
-                <div class="card__info">
-
-                    <p>
-                        Obsidian 是一個沉重穩重的石頭，屏現出堅強和穩定的個性。
-                        他的存在總是給人一種安全感和信心，就像一座堅固的堡壘般穏定可靠。
-                        儘管他可能顯得沈默寡言,Obsidian 是一個值得信賴的朋友和盟友,
-                        他的堅定意志和冷靜判斷為他贏得了眾人的尊重和敬佩。
-                    </p><br>
+                    </div>
+                    <picture class="card__image">
+                        <source media="(max-width: 727px)" srcset="image/s_volcanic_p.jpg">
+                        <source media="(min-width: 728px)" srcset="image/s_volcanic.jpg">
+                        <img src="image/s_volcanic.jpg" alt="Volcanic">
+                    </picture>
                 </div>
-                <picture class="card__image">
-                    <source media="(max-width: 727px)" srcset="image/s_obsidian_p.jpg">
-                    <source media="(min-width: 728px)" srcset="image/s_obsidian.jpg">
-                    <img src="image/Obsidian.jpg" alt="Obsidian">
-                </picture>
-            </div>
-            <div class="card">
-                <div class="card__info">
-                    <p>PEBBLE 是一顆膽小好奇的鵝卵石,經常以旁觀者的角度觀察 周遭的事物。他喜歡觀察其他石石的行為和互動,但通常不願意 直接參與其中。但她的好奇心卻常常驅使著她去探索世界, 從一個安全的距離觀察,而不是親身體驗。他的靜靜觀察讓她能 夠從不同的角度看待事物。</p>
-                    <br>
-                </div>
-                <picture class="card__image">
-                    <source media="(max-width: 727px)" srcset="image/s_pebble_p.jpg">
-                    <source media="(min-width: 728px)" srcset="image/s_pebble.jpg">
-                    <img src="image/s_pebble.jpg" alt="PEBBLE">
-                </picture>
 
-            </div>
-            <div class="card">
-                <div class="card__info">
-                    <p>Volcanic 是一顆脾氣火爆的火山岩,他的外表有粗硬的紋理, 他的個性熱情奔放,常常怒火中燒,像是火山一樣噴發出來,對 於自己的意見和想法固執。但是能在最困難的時候保持冷靜和理 智。分析情勢,找到解決問題的方法,是一個可靠的夥伴。</p>
-                    <br><br>
+            </section>
 
-                </div>
-                <picture class="card__image">
-                    <source media="(max-width: 727px)" srcset="image/s_volcanic_p.jpg">
-                    <source media="(min-width: 728px)" srcset="image/s_volcanic.jpg">
-                    <img src="image/s_volcanic.jpg" alt="Volcanic">
-                </picture>
-            </div>
+            <petstone>
 
-        </section>
-
-        <petstone>
-
-        </petstone>
-    </div>  
+            </petstone>
+</div>  
 <script>
     let myNav = document.querySelector(".nav-menu"); //在 JS 裡定義下拉選單
     let myButton = document.querySelector(".nav-button");// 在 JS 裡定義漢堡按鈕
