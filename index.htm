@@ -5,80 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>石家莊</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .red-ball {
-            /*CSS 的 Animation 動態語法*/
-            animation-name: move-ball; /*動態的名稱*/
-            animation-duration: 4s; /*動態播放的時間長度*/
-            animation-timing-function: ease-in-out; /*播放的節奏*/
-            animation-delay: 0s; /*延遲播放*/
-            animation-iteration-count:  infinite; /*播放次數*/
-            animation-fill-mode: forwards; /*播完之後的狀態*/
-            /*以下為上面動態語法的的縮寫*/
-            /*animation: move-ball 5s ease-in 0s infinite alternate;*/
-        }
-
-        @keyframes move-ball {
-            0% {
-                scale: 60%;
-                transform: translate(0px, 0px) rotate(45deg);
-            }
-
-            25% {
-                scale: 100%;
-                transform: translate(120px,200px);
-            }
-
-            50% {
-                scale: 60%;
-                transform: translate(200px,180px) rotate(45deg);
-            }
-
-            75% {
-                scale: 100%;
-                transform: translate(450px,200px);
-            }
-
-            100% {
-                scale: 60%;
-                transform: translate(800px,180px) rotate(45deg);
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="wrap">
         <header>
-            <h1>
+
+            <!--<h1>
                 <a href="index.htm" title="石家莊">石家莊</a>
-            </h1>
+                <img src="image/stone_m.png" height="45px" width="50px" alt="logo">
+                <img src="image/logo.jpg" height="45px" width="180px" alt="logo">
+            </h1>-->
+            <div class="hlogo">
+               <img src="image/logo.jpg">
+            </div>
+            <div class="red-stone">
+                <img src="image/stone_m.png" width="55px" height="44px"  alt="logo">
+            </div>
 
-            <nav>
-                <button class="nav-button"><img src="image/menu.jpg" alt=""></button>
-                <ul class="nav-menu hide">
-                    <li><a href="#" title="歷史介紹">歷史介紹</a></li>
-                    <li><a href="#" title="景點導覽">景點導覽</a></li>
-                    <li><a href="#" title="本地特產">本地特產</a></li>
-                    <li><a href="#" title="旅遊中心">旅遊中心</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <button class="nav-button"><img src="image/menu.jpg"></button>
+                    <ul class="nav-menu hide">
+                        <li><a href="#" title="歷史介紹">歷史介紹</a></li>
+                        <li><a href="#" title="景點導覽">景點導覽</a></li>
+                        <li><a href="#" title="本地特產">本地特產</a></li>
+                        <li><a href="#" title="旅遊中心">旅遊中心</a></li>
+                    </ul>
+                </nav>
 
-        </header>
+</header>
 
         <main>
-            <div class="red-ball">
+            <!--<div class="red-ball">
                 <img src="image/stone_m.png" alt="stone">
-            </div>
+            </div>-->
         </main>
 
             <section>

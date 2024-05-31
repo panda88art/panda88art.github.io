@@ -8,27 +8,35 @@
     .wrap {
         width: 100%;
         margin: 0px auto;
-        padding: 10px 20px;
+        padding: 0px 10px;
         background-color: var(--black-color);
     }
+    .hlogo {
+        width: 180px;
+        height: 41px;
+    }
     header {
-        width: 100%;
+        width: 97%;
         margin: 0px auto;
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        background-color: var(--header-gray-color);
+        position: fixed;
+        /*padding-right: 10px*/
     }
     header h1 {
         text-indent: -999px;
         overflow: hidden;
         width: 180px;
     }
+
     header button.nav-button {
         position: absolute;
-        top: 20px;
-        right: 20px;
-        background: black;
+        top: 10px;
+        right: 10px;
+        background: var(--header-gray-color);
         border: 0;
         cursor: pointer;
     }
@@ -38,7 +46,7 @@
         background-image: url(image/logo.jpg);
     }
     header ul {
-        margin: 0; padding: 0;
+        margin: 10; padding: 10;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -55,8 +63,8 @@
         font-weight: bold;
         line-height: 46px;
         display: block;
-        width: 100%; height: 46px;
-        border-radius: 23px;
+        width: 95%; height: 46px;
+        border-radius: 10px;
         background-color: var(--light-color);
     }
         header ul a:hover {
@@ -148,6 +156,7 @@
         width: 100%;
         border-radius: 15px;
         overflow: hidden;
+        padding-top: 30px;
         /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);*/
     }
 /*
@@ -176,5 +185,37 @@
     footer span {
         display: block;
     }
+    .red-stone {
+        /*CSS 的 Animation 動態語法*/
+        animation-name: move-stone; /*動態的名稱*/
+        animation-duration: 4s; /*動態播放的時間長度*/
+        animation-timing-function: ease-in-out; /*播放的節奏*/
+        animation-delay: 0s; /*延遲播放*/
+        animation-iteration-count: infinite; /*播放次數*/
+        animation-fill-mode: forwards; /*播完之後的狀態*/
+        /*以下為上面動態語法的的縮寫*/
+        /*animation: move-ball 5s ease-in 0s infinite alternate;*/
+        height: 4px;
+    }
+
+    @keyframes move-stone {
+        0% {
+            transform: scale(1.5) translate(0px, 0px) rotate(60deg);
+        }
+        20% {
+            transform: scale(1.2) translate(100px,220px) ;
+        }
+        40% {
+            transform: scale(1.4) translate(160px,100px) ;
+        }
+        60% {
+            transform: scale(1.2) translate(220px,220px);
+        }
+        100% {
+            transform: scale(1) translate(820px,220px);
+        }
+    }
+
+
     
     }/*Mobile Setting End*/

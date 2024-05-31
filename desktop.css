@@ -4,18 +4,22 @@
 
 .wrap {
     width: 940px; 
-    margin: 20px auto;
-    padding-top: 20px;
+    margin: 0px auto;
+    padding-top: 0px;
     background-color: var(--background-color);
 }
+.hlogo {
+    width: 180px; height: 45px;
+}
 header {
-        width: 900px;
-        margin: 0px auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        background-color: var(--header-gray-color);
-    }
+    width: 940px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    background-color: var(--header-gray-color);
+    position: fixed;
+}
 header h1 {
     text-indent: -999px;
     overflow: hidden;
@@ -57,6 +61,7 @@ main {
     border-radius: 15px;
     padding-top: 0px;
     padding-left: 0px;
+    background: #ffd800;
     /*background-image: url(image/main_desktop.jpg); */
     display: flow-root;
 }
@@ -124,6 +129,7 @@ div.card__info p {
     width: 900px;
     border-radius: 15px;
     overflow: hidden;
+    padding-top: 30px;
     /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);*/
 }
 
@@ -138,10 +144,6 @@ div.ban__info {
     padding: 0px;
 }
 
-
-
-
-
 footer {
     color: var(--secondary-color);
     text-align: center;
@@ -149,5 +151,37 @@ footer {
     font-family: var(--main-font);
     line-height: 60px;
 }
+
+    .red-stone {
+        /*CSS 的 Animation 動態語法*/
+        animation-name: move-stone; /*動態的名稱*/
+        animation-duration: 4s; /*動態播放的時間長度*/
+        animation-timing-function: ease-in-out; /*播放的節奏*/
+        animation-delay: 0s; /*延遲播放*/
+        animation-iteration-count: infinite; /*播放次數*/
+        animation-fill-mode: forwards; /*播完之後的狀態*/
+        /*以下為上面動態語法的的縮寫*/
+        /*animation: move-ball 5s ease-in 0s infinite alternate;*/
+        height: 4px;
+    }
+
+    @keyframes move-stone {
+        0% {
+            transform: scale(1.5) translate(0px, 0px) rotate(0deg);
+        }
+        20% {
+            transform: scale(1.2) translate(100px,220px) rotate(90deg);
+        }
+        40% {
+            transform: scale(1.4) translate(160px,100px) rotate(180deg);
+        }
+        60% {
+            transform: scale(1.2) translate(220px,220px) rotate(270deg);
+        }
+        100% {
+            transform: scale(1) translate(820px,220px) rotate(720deg);
+        }
+    }
+
 
 }/*Desktop Setting End*/
